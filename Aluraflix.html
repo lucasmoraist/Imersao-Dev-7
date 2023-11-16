@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluraflix</title>
+    <style>
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+            background-color: #000000;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .page-logo {
+            width: 200px;
+        }
+
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        body>img {
+            margin: 0 10px;
+        }
+
+        img {
+            max-height: 250px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #d80000;
+            padding: 4px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        li a:hover {
+            transition: .2s;
+            color: #d80000;
+            background-color: #fff;
+        }
+
+        li a:not(:hover) {
+            transition: .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Conversor.html">Conversor</a></li>
+            <li><a href="Advinhacao.html">Advinhação</a></li>
+            <li><a href="Aluraflix.html">Aluraflix</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <a href="index.html">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+                class="page-logo" alt="">
+        </a>
+    </div>
+</body>
+
+</html>
+<script>
+    var nomesFilmes = ["Jujutsu Kaisen", "Nartuo", "Tokyo Revengers"]
+
+    var listaFilmes = [
+        'https://www.animeclick.it/immagini/anime/Jujutsu_Kaisen/cover/Jujutsu_Kaisen-cover.jpg',
+        'https://pbs.twimg.com/media/F2smbR9WwAA40Ly.jpg',
+        'https://m.media-amazon.com/images/M/MV5BYzk4NDc5MTAtZGQzOC00Y2MyLThkMGEtOGRkMzliOGNlYjkwXkEyXkFqcGdeQXVyMTA5NzUzODM4._V1_.jpg'
+    ]
+
+    for (var i = 0; i < listaFilmes.length; i++) {
+        document.write(`<img src=${listaFilmes[i]}>`)
+        document.write(`<p>${nomesFilmes[i]}</p>`)
+    }
+
+</script>

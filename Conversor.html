@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <style>
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("./assets/cripto.png");
+            background-color: #000000;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .page-logo {
+            width: 200px;
+        }
+
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        body>img {
+            margin: 0 10px;
+        }
+
+        img {
+            max-height: 250px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #d80000;
+            padding: 4px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        li a:hover {
+            transition: .2s;
+            color: #d80000;
+            background-color: #fff;
+        }
+
+        li a:not(:hover) {
+            transition: .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Conversor.html">Conversor</a></li>
+            <li><a href="Advinhacao.html">Advinhação</a></li>
+            <li><a href="Aluraflix.html">Aluraflix</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <a href="index.html">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+                class="page-logo" alt="">
+        </a>
+    </div>
+    <input type="text" id="name" placeholder="Digite seu nome">
+    <button onclick="converteDolar()">Dolar</button>
+    <button onclick="converteEthereum()">Ethereum</button>
+    <button onclick="converteAnosLuz()">Anos luz</button>
+</body>
+
+</html>
+<script>
+    var nome = document.querySelector('#name')
+
+    var cotacaoDolar = 4.9;
+    var cotacaoEthereum = 10197.89;
+
+    var anosLuz = 9460000000000
+    var metros = 2
+
+    var valorParaConverter = 30;
+
+    function converteDolar() {
+        var valorConvertido = valorParaConverter * cotacaoDolar;
+        alert(`Olá ${nome.value}. Esse é o valor convertido - R$ ${valorConvertido.toFixed(2)}`);
+    }
+
+    function converteEthereum() {
+        var valorConvertido = valorParaConverter * cotacaoEthereum;
+        alert(`Olá ${nome.value}. 1 Ethereum equivale a R$ ${cotacaoEthereum} e ETH ${valorParaConverter} equivale a R$ ${valorConvertido.toFixed(2)}`)
+    }
+
+    function converteAnosLuz() {
+        var valorConvertido = metros * anosLuz;
+        alert(`Olá ${nome.value}. Em metros 1 ano luz equivale a ${anosLuz}m e ${metros}m equivale a ${valorConvertido.toFixed(2)}m`)
+    }
+</script>
