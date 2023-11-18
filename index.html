@@ -8,9 +8,7 @@
   <style>
     body {
       font-family: "Roboto Mono", monospace;
-      text-align: center;
-      background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
-      background-color: #000000;
+      background-color: #101926;
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
@@ -51,7 +49,7 @@
       max-height: 250px;
     }
 
-    ul {
+    #navegation {
       list-style: none;
       display: flex;
       justify-content: center;
@@ -76,12 +74,33 @@
     li a:not(:hover) {
       transition: .2s;
     }
+
+    #aulas{
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    .card{
+      width: 220px;
+      background-color: #fff;
+      border-radius: 20px;
+    }
+
+    .card h3{
+      text-align: center;
+    }
+
+    .card li{
+      margin: 10px 0;
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
   <nav>
-    <ul>
+    <ul id="navegation">
       <li><a href="Conversor.html">Conversor</a></li>
       <li><a href="Advinhacao.html">Advinhação</a></li>
       <li><a href="Aluraflix.html">Aluraflix</a></li>
@@ -96,6 +115,57 @@
         alt="">
     </a>
 
+    <h2>Projeto criado para praticar JavaScript</h2>
+    <p>Durante essa imersão foi visto:</p>
+  </div>
+
+  <div id="aulas">
+    <div class="card">
+      <h3>Aula 01</h3>
+      <ul>
+        <li>Uso de variaveis</li>
+        <li>Tipos de variaveis</li>
+        <li>Como fixar valor decimais</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Aula 02</h3>
+      <ul>
+        <li>Testes com prompt</li>
+        <li>Estruturas condicionais</li>
+        <li>Utilizar a função Math.random()</li>
+        <li>Estruturas de repetição While</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Aula 03</h3>
+      <ul>
+        <li>Arrays</li>
+        <li>Estrutura de repetição For</li>
+        <li>document.write()</li>
+        <li>array.lenght</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Aula 04</h3>
+      <ul>
+        <li>Obtendo valores digitados pelo usuário</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Aula 05</h3>
+      <ul>
+        <li>Remover código estático</li>
+        <li>Criar um objeto</li>
+        <li></li>
+      </ul>
+    </div>
   </div>
 </body>
 
