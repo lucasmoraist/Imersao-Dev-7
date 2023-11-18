@@ -20,8 +20,14 @@ var listaFilmes = [
     'https://m.media-amazon.com/images/M/MV5BYzk4NDc5MTAtZGQzOC00Y2MyLThkMGEtOGRkMzliOGNlYjkwXkEyXkFqcGdeQXVyMTA5NzUzODM4._V1_.jpg'
 ]
 
-for(var i=0; i < listaFilmes.length; i++){
-    document.write(`<img src=${listaFilmes[i]}>`)
-    document.write(`<p>${nomesFilmes[i]}</p>`)
+for (var i = 0; i < listaFilmes.length; i++) {
+    document.write(`
+        <div id="lista-filmes">
+            <div id="card-filme">
+                <img src=${listaFilmes[i]}>
+                <p>${nomesFilmes[i]}</p>
+            </div>
+        <div>
+    `)
 }
 
