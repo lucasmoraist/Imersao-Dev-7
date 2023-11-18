@@ -11,3 +11,15 @@ body {
 img {
     max-height: 250px;
 }
+
+#lista-filmes{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#card-filme {
+    background-color: #101926;
+    padding: 10px 10px 0 10px;
+    color: #fff;
+}
