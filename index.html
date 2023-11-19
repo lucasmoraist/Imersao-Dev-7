@@ -1,83 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aluraflix</title>
-  <link rel="stylesheet" href="style/index.css">
-  <link rel="stylesheet" href="style/home.css">
+  <title>Classificação Alura</title>
 </head>
-
 <body>
-  <nav>
-    <ul id="navegation">
-      <li><a href="Conversor.html">Conversor</a></li>
-      <li><a href="Advinhacao.html">Advinhação</a></li>
-      <li><a href="Aluraflix.html">Aluraflix</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h1 class="page-title">
-      Imersão Dev
-    </h1>
-    <a href="index.html">
-      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
-        alt="">
-    </a>
+  <h1>Classificação Alura</h1>
 
-    <h2>Projeto criado para praticar JavaScript</h2>
-    <p>Durante essa imersão foi visto:</p>
-  </div>
-
-  <div id="aulas">
-    <div class="card">
-      <h3>Aula 01</h3>
-      <ul>
-        <li>Uso de variaveis</li>
-        <li>Tipos de variaveis</li>
-        <li>Como fixar valor decimais</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Aula 02</h3>
-      <ul>
-        <li>Testes com prompt</li>
-        <li>Estruturas condicionais</li>
-        <li>Utilizar a função Math.random()</li>
-        <li>Estruturas de repetição While</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Aula 03</h3>
-      <ul>
-        <li>Arrays</li>
-        <li>Estrutura de repetição For</li>
-        <li>document.write()</li>
-        <li>array.lenght</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Aula 04</h3>
-      <ul>
-        <li>Obtendo valores digitados pelo usuário</li>
-        <li>Adicionando elementos dentro do HTML com JS</li>
-        <li>Utilizando includes para verificar se um texto contém certa palavra</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Aula 05</h3>
-      <ul>
-        <li>Remover código estático</li>
-        <li>Criar um objeto</li>
-        <li></li>
-      </ul>
-    </div>
-  </div>
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="3">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+      <tr>
+        <td>Paulo</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+      <tr>
+        <td>Rafa</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>
