@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Classificação Alura</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Classificação Alura</h1>
+
+  <input type="text" id="namePlayer" placeholder="Digite o nome do jogador">
+  <button onclick="addPlayer()">adicionar</button>
 
   <table style="width:100%">
     <thead>
@@ -20,27 +24,9 @@
       </tr>
     </thead>
     <tbody id="tabelaJogadores">
-      <tr>
-        <td>Paulo</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><button onClick="adicionarVitoria()">Vitória</button></td>
-        <td><button onClick="adicionarEmpate()">Empate</button></td>
-        <td><button onClick="adicionarDerrota()">Derrota</button></td>
-      </tr>
-      <tr>
-        <td>Rafa</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><button onClick="adicionarVitoria()">Vitória</button></td>
-        <td><button onClick="adicionarEmpate()">Empate</button></td>
-        <td><button onClick="adicionarDerrota()">Derrota</button></td>
-      </tr>
+      
     </tbody>
   </table>
 </body>
 </html>
+<script src="index.js"></script>
